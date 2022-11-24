@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What it was to be eighteen</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+        .menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: #fff;
+          display: grid;
+          place-content: center;
+        }
+        .header_menuBtn {
+          position: relative;
+          z-index: 10;
+        }
+        .noscroll,
+        .noscroll body {
+          overflow: hidden;
+        }
+      </style>
+
 </head>
-<body>
-    <header>
-       <a href="/">
-        <button><img src="assets/icones/wiwtb18.svg"></button>
-       </a>
+<header>
+    <a href="/">
+     <button><img src="assets/icones/wiwtb18.svg"></button>
+    </a>
 
-       <a href="/">
-        <button><img src="./assets/icones/globe 1.svg"></button>
-     </a>
- 
-      <button><img src="./assets/icones/Menu.svg"></button>
+    <a href="/">
+     <button><img src="./assets/icones/globe 1.svg"></button>
+  </a>
 
-      <h1>Les autres projets</h1>
+   
+     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+        <img src="./assets/icones/Menu.svg" alt="Menu">
+     </button>
+     
 
-       </header>
+     <nav class="headermenu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+       <ul class="menulist">
+         <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
+         <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a></li>
+         <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a></li>
+         <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by yours</a></li>
+         <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
+         <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la biodiversité</a></li>
+     </ul>
+     <ul>
+         <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
+         <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
+         <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
+         <li class="menuitem"><a class="menu__link" href="formulairedecontact.html">Contacts</a></li>
+       </ul>
+    </nav>
 
+    </header>
        <main>
         <h2>Dans cette partie vous trouverez les projets de mes camarades.</h2>
 
