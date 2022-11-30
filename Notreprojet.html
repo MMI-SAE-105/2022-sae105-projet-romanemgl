@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What it was to be eighteen</title>
+
+  <link rel="stylesheet" href="src/css/style.css">
   <script defer src="https://unpkg.com/alpinejs"></script>
+
   <style>
     .menu {
       position: fixed;
@@ -19,7 +22,7 @@
       place-content: center;
     }
 
-    .header_menuBtn {
+    .header__menuBtn {
       position: relative;
       z-index: 10;
     }
@@ -33,7 +36,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <a href="index.html">
       <img src="assets/icones/wiwtb18.svg" alt="logo du site">
     </a>
@@ -43,25 +46,30 @@
     </a>
 
 
-    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-      <img src="./assets/icones/Menu.svg" alt="Menu">
+    <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+      <img src="./assets/icones/Menu.svg" alt="menu">
+
+      <span></span>
     </button>
 
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
 
-    <nav class="headermenu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
       <ul class="menulist">
         <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
         <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a></li>
         <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a></li>
-        <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by yours</a></li>
+        <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by
+            yours</a></li>
         <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
-        <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la biodiversité</a></li>
+        <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la biodiversité</a>
+        </li>
       </ul>
       <ul>
         <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
         <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
         <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
-        <li class="menuitem"><a class="menu__link" href="formulairedecontact.html">Contacts</a></li>
+        <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
       </ul>
     </nav>
 

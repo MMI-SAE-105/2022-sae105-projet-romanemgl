@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What it was to be eighteen</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+
     <style>
         .menu {
             position: fixed;
@@ -19,7 +22,7 @@
             place-content: center;
         }
 
-        .header_menuBtn {
+        .header__menuBtn {
             position: relative;
             z-index: 10;
         }
@@ -33,7 +36,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a href="index.html">
             <img src="assets/icones/wiwtb18.svg" alt="logo du site">
         </a>
@@ -43,12 +46,15 @@
         </a>
 
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-            <img src="./assets/icones/Menu.svg" alt="Menu">
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img src="./assets/icones/Menu.svg" alt="menu">
+
+            <span></span>
         </button>
 
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
 
-        <nav class="headermenu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
             <ul class="menulist">
                 <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
                 <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a></li>
@@ -63,7 +69,7 @@
                 <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
                 <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
                 <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
-                <li class="menuitem"><a class="menu__link" href="formulairedecontact.html">Contacts</a></li>
+                <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
             </ul>
         </nav>
 
@@ -83,14 +89,14 @@
 
         <ul>
             <li><a href="Italia.html"><img src="./assets/images/20221115/Italia.webp" alt="photo Italie"></a>
-                <a href="Italia.html">Italia</a>
+                <p><a href="Italia.html">Italia</a></p>
                 Ce pays n’est pas celui de tes origines, du moins pas directement. Cependant au fil de ta jeunesse, tu
                 développes...
             </li>
 
             <li><a href="Petitcoindeparadis.html"><img src="./assets/images/20221115/Petitcoindeparadis.webp"
                         alt="photo Cinque Terre"></a>
-                <a href="Petitcoindeparadis.html">Petit coin de paradis</a>
+                <p><a href="Petitcoindeparadis.html">Petit coin de paradis</a></p>
                 Ton petit coin de paradis. En cinq jours, il a conquérir le cœur de toi, tes sœurs, et sans aucun
                 doutes,
                 les milliers d’autres visiteurs...
@@ -98,28 +104,28 @@
 
             <li><a href="Letempsdesfleurs.html"><img src="./assets/images/20221115/Letempsdesfleurs.webp"
                         alt="Photo de Dalida"></a>
-                <a href="Letempsdesfleurs.html">Le temps des fleurs</a>
+                <p><a href="Letempsdesfleurs.html">Le temps des fleurs</a></p>
                 Le temps des fleurs, chansons chère à ton cœur, elle te rend pleine de nostalgie. Lorsque tu l’écoutes,
                 tu te revois...
             </li>
 
             <li><a href="andillcallyoubyyours.html"><img src="./assets/images/20221115/AndIllcallyoubyyours.webp"
                         alt="Photo de l'affiche de Call me by your name"></a>
-                <a href="Andillcallyoubyyours.html">...And I'll call you by yours</a>
+                <p><a href="Andillcallyoubyyours.html">...And I'll call you by yours</a></p>
                 Agée de 17 ans, tu découvres Call me by your name et il met en image ce que tu aimes dans les films
                 romantiques...
             </li>
 
             <li><a href="levoyagedufutur.html"><img src="./assets/images/20221115/Levoyagedufutur.webp"
                         alt="Photo d'Italie"></a>
-                <a href="Levoyagedufutur.html">Le voyage du futur</a>
+                <p><a href="Levoyagedufutur.html">Le voyage du futur</a></p>
                 Avoir la vingtaine en 2022 n’est pas anodin, nous avons vécu des choses inédites les années
                 précédentes...
             </li>
 
             <li><a href="nuirealabiodiversite.html"><img src="./assets/images/20221115/Lesdérives.webp"
                         alt="Photo d'italiens"></a>
-                <a href="Nuirealabiodiversité.html">Nuire à la biodiversité</a>
+                <p><a href="Nuirealabiodiversité.html">Nuire à la biodiversité</a></p>
                 Instagram, l’un des plus grand réseaux sociaux de notre ère, qui a initialement pour simple but de
                 poster
                 des photos prises par les utilisateurs, a pris une ampleur énorme ces dernières années...
