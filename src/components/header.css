@@ -1,0 +1,14 @@
+header {
+    display: block;
+    justify-content: space-between;
+}
+
+.headerstart {
+    margin-left: 0.5cm;
+    margin-top: 0.5cm;
+}
+
+.headerend {
+    margin-right: 0.5cm;
+    margin-top: 0.5cm;
+}

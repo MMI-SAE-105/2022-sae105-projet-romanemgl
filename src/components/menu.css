@@ -1,0 +1,30 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #306562;
+    display: grid;
+    place-content: center;
+}
+
+.header__menuBtn {
+    position: relative;
+    z-index: 10;
+}
+
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black
+}

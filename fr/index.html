@@ -7,173 +7,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What it was to be eighteen</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 
-    <style>
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: #fff;
-            display: grid;
-            place-content: center;
-        }
 
-        .header__menuBtn {
-            position: relative;
-            z-index: 10;
-        }
-
-        .noscroll,
-        .noscroll body {
-            overflow: hidden;
-        }
-    </style>
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="headerstart">
         <a href="index.html">
             <header class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
         </a>
 
-        <a href="/">
-            <header class="image__globe"> <img src="../assets/icones/globe1.svg" alt="icone langage">
-        </a>
+        <header class="headerend">
+            <a href="/">
+                <header class="image__globe"> <img src="../assets/icones/globe1.svg" alt="icone langage">
+            </a>
 
 
-        <header class="bouton__menu"> <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-                class="header__menuBtn">
-                <header class="image__menu"> <img src="../assets/icones/Menu.svg" alt="menu">
+            <header class="bouton__menu"> <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+                    class="header__menuBtn">
+                    <header class="image__menu"> <img src="../assets/icones/Menu.svg" alt="menu">
 
-                    <span></span>
-            </button>
+                        <span></span>
+                </button>
 
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
 
 
-                <ul class="menulist">
-                    <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
-                    <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a>
-                    </li>
-                    <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a></li>
-                    <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by
-                            yours</a></li>
-                    <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
-                    <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
-                            biodiversité</a>
-                    </li>
-                </ul>
+                    <ul class="menulist">
+                        <p>Nos articles</p>
+                        <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
+                        <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de
+                                paradis</a>
+                        </li>
+                        <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a>
+                        </li>
+                        <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you
+                                by
+                                yours</a></li>
+                        <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
+                        <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
+                                biodiversité</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p>En savoir plus...</p>
+                        <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
+                        <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a>
+                        </li>
+                        <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
+                        <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+            <main>
+                <h1 class="titre">What it was to be eighteen</h1>
+
+                <img class="image__accueil" src="../assets/images/20221115/Imagemenu.webp" alt="photos Cinque Terre">
+                <h2 class="titre2">Vous trouverez dans ce site toutes vos réponses concernant l’Italie du point de vue
+                    d’une
+                    jeune femme
+                    qui
+                    garde un souvenir merveilleux de ce pays. son tour de vous contez ses aventures à travers six
+                    articles
+                    abordant des thématiques et enjeux différents... </h2>
+
+            </main>
+
+            <nav>
+
+
                 <ul>
-                    <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
-                    <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
-                    <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
-                    <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
+                    <li class="article1"><a href="Italia.html"><img src="../assets/images/20221115/Italia.webp"
+                                alt="photo Italie"></a>
+                        <p><a href="Italia.html">Italia</a></p>
+                        Ce pays n’est pas celui de tes origines, du moins pas directement. Cependant au fil de ta
+                        jeunesse,
+                        tu
+                        développes...
+                    </li>
+
+                    <li class="article2"><a href="Petitcoindeparadis.html"><img
+                                src="../assets/images/20221115/Petitcoindeparadis.webp" alt="photo Cinque Terre"></a>
+                        <p><a href="Petitcoindeparadis.html">Petit coin de paradis</a></p>
+                        Ton petit coin de paradis. En cinq jours, il a conquérir le cœur de toi, tes sœurs, et sans
+                        aucun
+                        doutes,
+                        les milliers d’autres visiteurs...
+                    </li>
+
+                    <li class="titre3"><a href="Letempsdesfleurs.html"><img
+                                src="../assets/images/20221115/Letempsdesfleurs.webp" alt="Photo de Dalida"></a>
+                        <p><a href="Letempsdesfleurs.html">Le temps des fleurs</a></p>
+                        Le temps des fleurs, chansons chère à ton cœur, elle te rend pleine de nostalgie. Lorsque tu
+                        l’écoutes,
+                        tu te revois...
+                    </li>
+
+                    <li class="titre4"><a href="andillcallyoubyyours.html"><img
+                                src="../assets/images/20221115/AndIllcallyoubyyours.webp"
+                                alt="Photo de l'affiche de Call me by your name"></a>
+                        <p><a href="Andillcallyoubyyours.html">...And I'll call you by yours</a></p>
+                        Agée de 17 ans, tu découvres Call me by your name et il met en image ce que tu aimes dans les
+                        films
+                        romantiques...
+                    </li>
+
+                    <li class="titre5"><a href="levoyagedufutur.html"><img
+                                src="../assets/images/20221115/Levoyagedufutur.webp" alt="Photo d'Italie"></a>
+                        <p><a href="Levoyagedufutur.html">Le voyage du futur</a></p>
+                        Avoir la vingtaine en 2022 n’est pas anodin, nous avons vécu des choses inédites les années
+                        précédentes...
+                    </li>
+
+                    <li class="titre6"><a href="nuirealabiodiversite.html"><img
+                                src="../assets/images/20221115/Lesdérives.webp" alt="Photo d'italiens"></a>
+                        <p><a href="Nuirealabiodiversité.html">Nuire à la biodiversité</a></p>
+                        Instagram, l’un des plus grand réseaux sociaux de notre ère, qui a initialement pour simple but
+                        de
+                        poster
+                        des photos prises par les utilisateurs, a pris une ampleur énorme ces dernières années...
+                    </li>
                 </ul>
             </nav>
 
-        </header>
-        <main>
-            <h1 class="titre">What it was to be eighteen</h1>
-
-            <img class="image__accueil" src="../assets/images/20221115/Imagemenu.webp" alt="photos Cinque Terre">
-            <h2 class="titre2">Vous trouverez dans ce site toutes vos réponses concernant l’Italie du point de vue d’une
-                jeune femme
-                qui
-                garde un souvenir merveilleux de ce pays. son tour de vous contez ses aventures à travers six articles
-                abordant des thématiques et enjeux différents... </h2>
-
-        </main>
-
-        <nav>
-
-
-            <ul>
-                <li class="article1"><a href="Italia.html"><img src="../assets/images/20221115/Italia.webp"
-                            alt="photo Italie"></a>
-                    <p><a href="Italia.html">Italia</a></p>
-                    Ce pays n’est pas celui de tes origines, du moins pas directement. Cependant au fil de ta jeunesse,
-                    tu
-                    développes...
-                </li>
-
-                <li class="article2"><a href="Petitcoindeparadis.html"><img
-                            src="../assets/images/20221115/Petitcoindeparadis.webp" alt="photo Cinque Terre"></a>
-                    <p><a href="Petitcoindeparadis.html">Petit coin de paradis</a></p>
-                    Ton petit coin de paradis. En cinq jours, il a conquérir le cœur de toi, tes sœurs, et sans aucun
-                    doutes,
-                    les milliers d’autres visiteurs...
-                </li>
-
-                <li class="titre3"><a href="Letempsdesfleurs.html"><img
-                            src="../assets/images/20221115/Letempsdesfleurs.webp" alt="Photo de Dalida"></a>
-                    <p><a href="Letempsdesfleurs.html">Le temps des fleurs</a></p>
-                    Le temps des fleurs, chansons chère à ton cœur, elle te rend pleine de nostalgie. Lorsque tu
-                    l’écoutes,
-                    tu te revois...
-                </li>
-
-                <li class="titre4"><a href="andillcallyoubyyours.html"><img
-                            src="../assets/images/20221115/AndIllcallyoubyyours.webp"
-                            alt="Photo de l'affiche de Call me by your name"></a>
-                    <p><a href="Andillcallyoubyyours.html">...And I'll call you by yours</a></p>
-                    Agée de 17 ans, tu découvres Call me by your name et il met en image ce que tu aimes dans les films
-                    romantiques...
-                </li>
-
-                <li class="titre5"><a href="levoyagedufutur.html"><img
-                            src="../assets/images/20221115/Levoyagedufutur.webp" alt="Photo d'Italie"></a>
-                    <p><a href="Levoyagedufutur.html">Le voyage du futur</a></p>
-                    Avoir la vingtaine en 2022 n’est pas anodin, nous avons vécu des choses inédites les années
-                    précédentes...
-                </li>
-
-                <li class="titre6"><a href="nuirealabiodiversite.html"><img
-                            src="../assets/images/20221115/Lesdérives.webp" alt="Photo d'italiens"></a>
-                    <p><a href="Nuirealabiodiversité.html">Nuire à la biodiversité</a></p>
-                    Instagram, l’un des plus grand réseaux sociaux de notre ère, qui a initialement pour simple but de
-                    poster
-                    des photos prises par les utilisateurs, a pris une ampleur énorme ces dernières années...
-                </li>
-            </ul>
-        </nav>
-
-        <footer>
-            <a href="/">
-                <footer class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
-            </a>
-            <footer class="titre">
-                <h3>What it was to be eighteen</h3>
-                <footer class="contact">
-                    <h4>CONTACT</h4>
-                    <footer class="adresse">
-                        <p>4 place Tharradin
-                            25200 Montbeliard
-                            03 81 99 47 34
-                            dut-mmi-montbeliard@univ-fcomte.fr</p>
-                        <foooter class="contact">
-                            <h4>NOUS SUIVRE</h4>
-                            <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
-                                    src="../assets/icones/instagram1.svg" alt="logo Instagram"></a>
-                            <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img
-                                    src="../assets/icones/facebook1.svg" alt="logo Facebook">
-                            </a>
-                            <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg"
-                                    alt="logo MMI"></a>
+            <footer>
+                <a href="/">
+                    <footer class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
+                </a>
+                <footer class="titre">
+                    <h3>What it was to be eighteen</h3>
+                    <footer class="contact">
+                        <h4>CONTACT</h4>
+                        <footer class="adresse">
+                            <p>4 place Tharradin
+                                25200 Montbeliard
+                                03 81 99 47 34
+                                dut-mmi-montbeliard@univ-fcomte.fr</p>
+                            <foooter class="contact">
+                                <h4>NOUS SUIVRE</h4>
+                                <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
+                                        src="../assets/icones/instagram1.svg" alt="logo Instagram"></a>
+                                <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img
+                                        src="../assets/icones/facebook1.svg" alt="logo Facebook">
+                                </a>
+                                <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg"
+                                        alt="logo MMI"></a>
 
 
-                            <footer class="projet__explication">
-                                <p>Projet réalisé dans le cadre d’un exercice
-                                    pédagogique au département MMi de Montbéliard.</p>
+                                <footer class="projet__explication">
+                                    <p>Projet réalisé dans le cadre d’un exercice
+                                        pédagogique au département MMi de Montbéliard.</p>
 
-                                <footer class="nom">
-                                    <p>Romane MIGUEL MMI1 B2</p>
+                                    <footer class="nom">
+                                        <p>Romane MIGUEL MMI1 B2</p>
 
-                                </footer>
+                                    </footer>
 
 </body>
 
