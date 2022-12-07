@@ -1,14 +1,24 @@
 header {
-    display: block;
+    display: flex;
     justify-content: space-between;
 }
 
-.headerstart {
+.header__end {
     margin-left: 0.5cm;
+    margin-right: 0.5cm;
     margin-top: 0.5cm;
 }
 
-.headerend {
+.header__start {
+    margin-left: 0.5cm;
     margin-right: 0.5cm;
     margin-top: 0.5cm;
+}
+
+.titre {
+    font-family: 'Bowlby One';
+}
+
+.titre2 {
+    font-family: 'Noto Serif Khojki';
 }
