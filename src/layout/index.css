@@ -1,28 +1,98 @@
-.titre1 {
-    font-family: 'Bowlby One';
-}
-
-.titre2 {
-    font-family: 'Bowlby One';
-}
-
-.titre3 {
-    font-family: 'Bowlby One';
-}
-
-.titre4 {
-    font-family: 'Bowlby One';
-}
-
-.titre5 {
-    font-family: 'Bowlby One';
-}
-
-.titre6 {
-    font-family: 'Bowlby One';
-}
-
 .image__accueil {
     height: 343.58;
     width: 407;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.titresite {
+    font-family: 'Bowlby One';
+    height: 4cm;
+    width: 6cm;
+    margin-left: 0.5cm;
+    margin-bottom: 0;
+}
+
+.titre2 {
+    margin-left: 0.1;
+    margin-left: 0.1;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    color: black;
+    size: 5px;
+}
+
+.article1 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.article2 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.article3 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.article4 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.article5 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.article6 {
+    font-family: 'Bowlby One';
+    font-size: 20px;
+}
+
+.introarticle1 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.introarticle2 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.introarticle3 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.introarticle4 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.introarticle5 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.introarticle6 {
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.ovale {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px / 40px;
+    background: orange;
 }

@@ -55,9 +55,10 @@ a:visited {
 }
 
 
-.menu list {
+.menuitem {
     align-items: left;
 }
+
 
 .nosarticles {
     font-family: 'Bowlby One';
@@ -65,4 +66,8 @@ a:visited {
 
 .ensavoirplus {
     font-family: 'Bowlby One';
+}
+
+ul {
+    list-style-type: none;
 }
