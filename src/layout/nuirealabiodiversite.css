@@ -1,0 +1,39 @@
+.titrebiodiversite {
+    font-family: 'Bowlby One';
+    text-align: center;
+    position: relative;
+}
+
+.introbiodiversite {
+    font-family: 'Noto Serif Khojki';
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre1biodiversite {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.part1biodiversite {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.part2biodiversite {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}

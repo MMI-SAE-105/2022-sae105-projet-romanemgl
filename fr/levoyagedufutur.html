@@ -7,140 +7,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What it was to be eighteen</title>
 
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="../src/components/footer.css">
+  <link rel="stylesheet" href="../src/components/header.css">
+  <link rel="stylesheet" href="../src/components/menu.css">
+
   <script defer src="https://unpkg.com/alpinejs"></script>
-
-  <style>
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #fff;
-      display: grid;
-      place-content: center;
-    }
-
-    .header__menuBtn {
-      position: relative;
-      z-index: 10;
-    }
-
-    .noscroll,
-    .noscroll body {
-      overflow: hidden;
-    }
-  </style>
 
 </head>
 
 <body>
   <header class="header">
-    <a href="index.html">
-      <header class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
-    </a>
+    <div class="header__start">
+      <a href="index.html">
+        <header class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+    </div>
 
-    <a href="/">
-      <header class="image__globe"> <img src="../assets/icones/globe1.svg" alt="icone langage">
-    </a>
-
-
-    <header class="bouton__menu"> <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-        <header class="image__menu"> <img src="../assets/icones/Menu.svg" alt="menu">
-
-          <span></span>
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn">
+        <img src="../assets/icones/globe1.svg" alt="icone langage">
+        <span></span>
       </button>
 
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+
+      <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="../assets/icones/Menu.svg" alt="menu">
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
 
 
-        <ul class="menulist">
-          <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
-          <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a>
-          </li>
-          <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a></li>
-          <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by
-              yours</a></li>
-          <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
-          <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
-              biodiversité</a>
-          </li>
-        </ul>
-        <ul>
-          <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
-          <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
-          <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
-          <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
-        </ul>
-      </nav>
-
-    </header>
-    <main>
-      <h1>Le voyage du futur</h1>
-      <h2>Avoir la vingtaine en 2022 n’est pas anodin, nous avons vécu des choses inédites les années précédentes…
-        Notamment à cause du dérèglement climatique et de ses conséquences, qui sont loin d’être moindre.
-        En effet les conséquences que les générations précédentes ont causé sont inévitables et nous avons désormais
-        tous
-        à vivre avec. Notre génération est très impliqué dans la lutte contre ce problème qui met en péril notre monde.
-      </h2>
-      <h3>Une solution qui donne de l’espoir </h3>
-      <p>Ayant tous des craintes concernant le climat et la détérioration des espaces verts, les nouvelles générations
-        commencent à développer de plus en plus un type de tourisme appelé le tourisme vert. </p>
-
-      <h3>Le tourisme vert, qu’est-ce que c’est ? </h3>
-      <p>Le tourisme vert, ou également appelé « éco tourisme », consiste simplement à visiter dans le monde dans le
-        respect de l’environnement.
-        Cette idée de tourisme vert s’est développé dans les années 80 suite a une prise de conscience du grand public
-        sur
-        le dégât du tourisme de masse sur la nature. Elle vise à préserver la biodiversité</p>
-
-      <img src="../assets/images/artem-zhukov-AA1QkGMzQeU-unsplash1.webp" alt="photo de paysage">
-
-      <h3>Quelle conséquence cela peut-il avoir ? </h3>
-      <p>Partant du fait que le tourisme est l’une des plus grades économies de notre monde, le fait de le rendre plus
-        respectueux de l’environnement donne de l’espoir.
-        Le fait de visiter localement, minimiser les activités qui augmentent notre emprunte environnementale ou bien
-        des
-        activités en plein air, mais encore voyager en train, qui semble être le moyen de transport le moins polluant.
-      </p>
-      <h3>Les meilleures localisations pour faire du tourisme vert</h3>
-      <ul>
-        <li><a href="https://fr.wikipedia.org/wiki/Costa_Rica">Le Costa Rica est LE pays dans lequel la beauté naturelle
-            est la plus préservée.</a></li>
-        <li><a href="https://fr.wikipedia.org/wiki/Norv%C3%A8ge">La Norvège possède une culture dans laquelle il est
-            primordial de prendre en compte l’environnement.</a></li>
-        <li><a href="https://fr.wikipedia.org/wiki/Kenya">Le Kenya est un pays qui possède des excursions en safaris
-            respectueuse de la faune et la flore.</a></li>
-        <li><a href="https://fr.wikipedia.org/wiki/Islande">Et enfin, l’Islande est devenu une destination qui attire
-            beaucoup pour ses paysages encore préservés de l’homme.</a></li>
+      <ul class="menu__list">
+        <p class="nosarticles"> Nos articles </p>
+        <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
+        <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de
+            paradis</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you
+            by
+            mine</a></li>
+        <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
+        <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
+            biodiversité</a>
+        </li>
       </ul>
+      <ul>
+        <p class="ensavoirplus">En savoir plus</p>
+        <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
+        <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
+        <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
+      </ul>
+    </nav>
 
-    </main>
+  </header>
 
-    <footer>
+  <main>
+    <h1 class="titrevoyage">Le voyage du futur</h1>
+    <h2 class="introvoyage">Avoir la vingtaine en 2022 n’est pas anodin, nous avons vécu des choses inédites les années
+      précédentes…
+      Notamment à cause du dérèglement climatique et de ses conséquences, qui sont loin d’être moindre.
+      En effet les conséquences que les générations précédentes ont causé sont inévitables et nous avons désormais
+      tous
+      à vivre avec. Notre génération est très impliqué dans la lutte contre ce problème qui met en péril notre monde.
+    </h2>
+    <h3 class="titre1voyage">Une solution qui donne de l’espoir </h3>
+    <p class="part1voyage">Ayant tous des craintes concernant le climat et la détérioration des espaces verts, les
+      nouvelles générations
+      commencent à développer de plus en plus un type de tourisme appelé le tourisme vert. </p>
+
+    <h3 class="titre2voyage">Le tourisme vert, qu’est-ce que c’est ? </h3>
+    <p class="part2voyage">Le tourisme vert, ou également appelé « éco tourisme », consiste simplement à visiter dans le
+      monde dans le
+      respect de l’environnement.
+      Cette idée de tourisme vert s’est développé dans les années 80 suite a une prise de conscience du grand public
+      sur
+      le dégât du tourisme de masse sur la nature. Elle vise à préserver la biodiversité</p>
+
+    <img class="imagepaysage" src="../assets/images/artem-zhukov-AA1QkGMzQeU-unsplash1.webp" alt="photo de paysage">
+
+    <h3 class="titre3voyage">Quelle conséquence cela peut-il avoir ? </h3>
+    <p class="part3voyage">Partant du fait que le tourisme est l’une des plus grades économies de notre monde, le fait
+      de le rendre plus
+      respectueux de l’environnement donne de l’espoir.
+      Le fait de visiter localement, minimiser les activités qui augmentent notre emprunte environnementale ou bien
+      des
+      activités en plein air, mais encore voyager en train, qui semble être le moyen de transport le moins polluant.
+    </p>
+
+    <h3 class="titre4voyage">Les meilleures localisations pour faire du tourisme vert</h3>
+    <ul>
+      <li><a class="lien1voyage" href="https://fr.wikipedia.org/wiki/Costa_Rica">Le Costa Rica est LE pays dans lequel
+          la beauté naturelle
+          est la plus préservée.</a></li>
+      <li><a href="https://fr.wikipedia.org/wiki/Norv%C3%A8ge">La Norvège possède une culture dans laquelle il est
+          primordial de prendre en compte l’environnement.</a></li>
+      <li><a href="https://fr.wikipedia.org/wiki/Kenya">Le Kenya est un pays qui possède des excursions en safaris
+          respectueuse de la faune et la flore.</a></li>
+      <li><a href="https://fr.wikipedia.org/wiki/Islande">Et enfin, l’Islande est devenu une destination qui attire
+          beaucoup pour ses paysages encore préservés de l’homme.</a></li>
+    </ul>
+
+  </main>
+
+  <footer>
+    <div class="blocfooter">
       <a href="/">
-        <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
+
+        <img class="imagelogo" src="../assets/icones/wiwtb18.svg" alt="logo du site">
       </a>
-      <h3>What it was to be eighteen</h3>
-      <h4>CONTACT</h4>
-      <p>4 place Tharradin
-        25200 Montbeliard
-        03 81 99 47 34
-        dut-mmi-montbeliard@univ-fcomte.fr</p>
-      <h4>NOUS SUIVRE</h4>
-      <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="../assets/icones/instagram1.svg"
-          alt="logo Instagram"></a>
-      <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="../assets/icones/facebook1.svg"
-          alt="logo Facebook">
-      </a>
-      <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+      <h3 class="titrefooter">What it was to be eighteen</h3>
+    </div>
 
 
-      <p>Projet réalisé dans le cadre d’un exercice
-        pédagogique au département MMi de Montbéliard.</p>
+    <h4 class="contact">CONTACT</h4>
+    <footer class="adresse">
+      <p>4 place Tharradin <br>
+        25200 Montbeliard <br>
+        03 81 99 47 34 <br>
+        dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+      <foooter class="contact">
+        <h4 class="noussuivre">NOUS SUIVRE</h4>
+        <div class="reseaux">
+          <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="../assets/icones/instagram1.svg"
+              alt="logo Instagram"></a>
+          <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="../assets/icones/facebook1.svg"
+              alt="logo Facebook">
+          </a>
+          <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+        </div>
 
-      <p>Romane MIGUEL MMI1 B2</p>
 
-    </footer>
+        <footer class="projet__explication">
+          <p class="moi">Projet réalisé dans le cadre d’un exercice
+            pédagogique au département MMi de Montbéliard.</p>
+
+
+          <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+        </footer>

@@ -7,156 +7,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What it was to be eighteen</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/components/footer.css">
+    <link rel="stylesheet" href="../src/components/header.css">
+    <link rel="stylesheet" href="../src/components/menu.css">
+
     <script defer src="https://unpkg.com/alpinejs"></script>
-
-    <style>
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: #fff;
-            display: grid;
-            place-content: center;
-        }
-
-        .header__menuBtn {
-            position: relative;
-            z-index: 10;
-        }
-
-        .noscroll,
-        .noscroll body {
-            overflow: hidden;
-        }
-    </style>
 
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
-            <header class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
-        </a>
+        <div class="header__start">
+            <a href="index.html">
+                <header class="image__logo"> <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+        </div>
 
-        <a href="/">
-            <header class="image__globe"> <img src="../assets/icones/globe1.svg" alt="icone langage">
-        </a>
-
-
-        <header class="bouton__menu"> <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-                class="header__menuBtn">
-                <header class="image__menu"> <img src="../assets/icones/Menu.svg" alt="menu">
-
-                    <span></span>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn">
+                <img src="../assets/icones/globe1.svg" alt="icone langage">
+                <span></span>
             </button>
 
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+
+            <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+                class="header__menuBtn">
+                <img src="../assets/icones/Menu.svg" alt="menu">
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
 
 
-                <ul class="menulist">
-                    <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
-                    <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de paradis</a>
-                    </li>
-                    <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a></li>
-                    <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you by
-                            yours</a></li>
-                    <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
-                    <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
-                            biodiversité</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
-                    <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a></li>
-                    <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
-                    <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
-                </ul>
-            </nav>
+            <ul class="menu__list">
+                <p class="nosarticles"> Nos articles </p>
+                <li class="menuitem"><a class="menulink" href="italia.html">Italia</a></li>
+                <li class="menuitem"><a class="menulink" href="petitcoindeparadis.html">Petit coin de
+                        paradis</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="letempsdesfleurs.html">Le temps des fleurs</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="andillcallyoubyyours.html">...And I'll call you
+                        by
+                        mine</a></li>
+                <li class="menuitem"><a class="menulink" href="levoyagedufutur.html">Le voyage du futur</a></li>
+                <li class="menuitem"><a class="menulink" href="nuirealabiodiversite.html">Nuire à la
+                        biodiversité</a>
+                </li>
+            </ul>
+            <ul>
+                <p class="ensavoirplus">En savoir plus</p>
+                <li class="menuitem"><a class="menulink" href="notreprojet.html">Notre Projet</a></li>
+                <li class="menuitem"><a class="menulink" href="lesautresprojets.html">Les autres projets</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="glossaire.html">Glossaire</a></li>
+                <li class="menuitem"><a class="menulink" href="formulairedecontact.html">Contacts</a></li>
+            </ul>
+        </nav>
 
-        </header>
-        <main>
-            <h1>Le temps des fleurs</h1>
-            <img src="../assets/images/20221119/gettyimages_141551832_jpg_2381.webp" alt="Photo de Dalida">
+    </header>
 
-            <h2>Le temps des fleurs, chansons chère à ton cœur, elle te rend pleine de nostalgie. Lorsque tu l’écoutes,
-                tu
-                te revois petite, en Charente chez tes grands-parents, et te font découvrir leur chanteuse préférée…
-            </h2>
+    <main>
+        <h1 class="titredalida">Le temps des fleurs</h1>
+        <img class="dalidaphoto" src="../assets/images/20221119/gettyimages_141551832_jpg_2381.webp"
+            alt="Photo de Dalida">
 
-            <h3>Quelques mots sur l’artiste </h3>
-            <p>Dalida, de son vraie nom Yolanda Gigliotti, nait au Caire en Egypte le 17 janvier 1933. Issue d’une
-                famille
-                italienne, elle vint s’installer seule en France à l’âge de 21 ans dans l’espoir de débuter une carrière
-                dans la chanson.
-                Pour cela elle pris des cours de chant, se produisit dans des cabarets, puis signa dans un label avec
-                Eddy
-                Barclay. Sa carrière décolla en 1956 notamment grâce au single Bambino.
-            </p>
+        <h2 class="introdalida">Le temps des fleurs, chanson chère à ton cœur, elle te rend pleine de nostalgie.
+            Lorsque tu l’écoutes,
+            tu
+            te revois petite, en Charente chez tes grands-parents, et ils te font découvrir leur chanteuse préférée…
+        </h2>
 
-            <h3>La suite que nous connaissons</h3>
-            <p>Dalida devint la première artiste a recevoir un disque d’or un an après la sortie de Bambino, fit la une
-                de
-                magazines a multiples reprises, obtenu l’Oscar de radio Monte Carlo sept ans de suite... Elle devint au
-                fil
-                de sa carrière une vraie icône italienne transgénérationnelle en France et à travers le monde, notamment
-                pour ton grand-père.
-                En effet, tout au long de sa carrière, Dalida écrivit ses chansons tant dans sa langue de cœur, le
-                français,
-                tant dans sa langue natale, l’italien.
-            </p>
+        <h3 class="titre1dalida">Quelques mots sur l’artiste </h3>
+        <p class="part1dalida">Dalida, de son vraie nom Yolanda Gigliotti, nait au Caire en Egypte le 17 janvier 1933.
+            Issue d’une
+            famille
+            italienne, elle vint s’installer seule en France à l’âge de 21 ans dans l’espoir de débuter une carrière
+            dans la chanson.
+            Pour cela elle pris des cours de chant, se produisit dans des cabarets, puis signa dans un label avec
+            Eddy
+            Barclay. Sa carrière décolla en 1956 notamment grâce au single Bambino.
+        </p>
 
-            <img src="../assets/images/20221119/39-2k-001-images-39-2k-001_1-removebg-preview1.webp"
-                alt="photo de disques">
+        <h3 class="titre2dalida">La suite que nous connaissons</h3>
+        <p class="part2dalida">Dalida devint la première artiste a recevoir un disque d’or un an après la sortie de
+            Bambino, fit la une
+            de
+            magazines a multiples reprises, obtenu l’Oscar de radio Monte Carlo sept ans de suite... Elle devint au
+            fil
+            de sa carrière une vraie icône italienne transgénérationnelle en France et à travers le monde, notamment
+            pour ton grand-père.
+            En effet, tout au long de sa carrière, Dalida écrivit ses chansons tant dans sa langue de cœur, le
+            français,
+            tant dans sa langue natale, l’italien.
+        </p>
+
+        <img class="disquephoto" src="../assets/images/20221119/39-2k-001-images-39-2k-001_1-removebg-preview1.webp"
+            alt="photo de disques">
 
 
-            <h3>Son histoire tragique, qui marque les esprits</h3>
-            <p>C’est en 1987 que Dalida se donna la mort à Montmartre, à Paris. C’est au sommet de sa gloire, à l’âge de
-                54
-                ans, que l’artiste s’éteint, laissant derrière elle l’image d’une femme engagée, talentueuse et
-                iconique.
-            </p>
+        <h3 class="titre3dalida">Son histoire tragique, qui marque les esprits</h3>
+        <p class="part3dalida">C’est en 1987 que Dalida se donna la mort à Montmartre, à Paris. C’est au sommet de sa
+            gloire, à l’âge de
+            54
+            ans, que l’artiste s’éteint, laissant derrière elle l’image d’une femme engagée, talentueuse et
+            iconique.
+        </p>
 
-            <h3>Ma favorite</h3>
-            <p>Initialement parut dans les années 20, Le temps des fleurs comme on le connait est en fait une reprise
-                par
-                Dalida d’un groupe russe. C’est en 1968 que la célèbre italienne la repris. La chanson devint un tube
-                qui
-                lui permis d’obtenir son vingtième disque d’or.
-                Dalida chante cette chanson en français donc, mais également en italien et en allemand. Ces reprises lui
-                valent d’être placée dans le top 10.
-                Il existe également une version anglaise reprise par Mary Hopkin, qui est également un succès.
-                Cette chanson t’est si chère car tu en aimes la joie qui en découle, tu te revois dancer autour de la
-                table
-                avec lui.
-            </p>
+        <h3 class="titre4dalida">Ma favorite</h3>
+        <p class="part4dalida">Initialement parut dans les années 20, Le temps des fleurs comme on le connait est en
+            fait une reprise
+            par
+            Dalida d’un groupe russe. C’est en 1968 que la célèbre italienne la repris. La chanson devint un tube
+            qui
+            lui permis d’obtenir son vingtième disque d’or.
+            Dalida chante cette chanson en français donc, mais également en italien et en allemand. Ces reprises lui
+            valent d’être placée dans le top 10.
+            Il existe également une version anglaise reprise par Mary Hopkin, qui est également un succès.
+            Cette chanson t’est si chère car tu en aimes la joie qui en découle, tu te revois dancer autour de la
+            table
+            avec lui.
+        </p>
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
+        <div class="blocfooter">
             <a href="/">
-                <img src="../assets/icones/wiwtb18.svg" alt="logo du site">
+
+                <img class="imagelogo" src="../assets/icones/wiwtb18.svg" alt="logo du site">
             </a>
-            <h3>What it was to be eighteen</h3>
-            <h4>CONTACT</h4>
-            <p>4 place Tharradin
-                25200 Montbeliard
-                03 81 99 47 34
-                dut-mmi-montbeliard@univ-fcomte.fr</p>
-            <h4>NOUS SUIVRE</h4>
-            <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="../assets/icones/instagram1.svg"
-                    alt="logo Instagram"></a>
-            <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="../assets/icones/facebook1.svg"
-                    alt="logo Facebook">
-            </a>
-            <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+            <h3 class="titrefooter">What it was to be eighteen</h3>
+        </div>
 
 
-            <p>Projet réalisé dans le cadre d’un exercice
-                pédagogique au département MMi de Montbéliard.</p>
+        <h4 class="contact">CONTACT</h4>
+        <footer class="adresse">
+            <p>4 place Tharradin <br>
+                25200 Montbeliard <br>
+                03 81 99 47 34 <br>
+                dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+            <foooter class="contact">
+                <h4 class="noussuivre">NOUS SUIVRE</h4>
+                <div class="reseaux">
+                    <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
+                            src="../assets/icones/instagram1.svg" alt="logo Instagram"></a>
+                    <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="../assets/icones/facebook1.svg"
+                            alt="logo Facebook">
+                    </a>
+                    <a href="http://mmimontbeliard.com/"><img src="../assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+                </div>
 
-            <p>Romane MIGUEL MMI1 B2</p>
 
-        </footer>
+                <footer class="projet__explication">
+                    <p class="moi">Projet réalisé dans le cadre d’un exercice
+                        pédagogique au département MMi de Montbéliard.</p>
+
+
+                    <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+                </footer>

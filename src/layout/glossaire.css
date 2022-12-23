@@ -1,0 +1,73 @@
+.titreglossaire {
+    font-family: 'Bowlby One';
+    text-align: center;
+    position: relative;
+}
+
+.synopsis {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.demographie {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.unesco {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.defsynopsis {
+    margin-left: 0.1;
+    margin-left: 0.1;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    color: black;
+    size: 5px;
+}
+
+.defunesco {
+    margin-left: 0.1;
+    margin-left: 0.1;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    color: black;
+    size: 5px;
+}
+
+.defdemographie {
+    margin-left: 0.1;
+    margin-left: 0.1;
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    color: black;
+    size: 5px;
+}
+
+.unmotincompris {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}

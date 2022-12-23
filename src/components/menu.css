@@ -7,6 +7,7 @@
     background: #306562;
     display: grid;
     place-content: center;
+    z-index: 5;
 }
 
 a:link {
@@ -20,7 +21,7 @@ a:visited {
 
 .header__menu-btn {
     position: relative;
-    z-index: 5;
+    z-index: 6;
     top: 0;
     right: 0;
     left: 100;
@@ -37,6 +38,8 @@ a:visited {
 }
 
 .menu-btn {
+    z-index: 6;
+    position: relative;
     width: 40px;
     height: 40px;
     cursor: pointer;

@@ -2,7 +2,6 @@
     height: 343.58;
     width: 407;
     margin-bottom: 0;
-    margin-top: 0;
 }
 
 .titresite {
@@ -88,11 +87,4 @@
     margin-bottom: 30px;
     margin-right: 10px;
     font-size: 17px;
-}
-
-.ovale {
-    width: 100px;
-    height: 100px;
-    border-radius: 60px / 40px;
-    background: orange;
 }

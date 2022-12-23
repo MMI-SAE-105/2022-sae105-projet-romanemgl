@@ -1,0 +1,78 @@
+.titrevoyage {
+    font-family: 'Bowlby One';
+    font-size: 25px;
+    text-align: center;
+}
+
+.introvoyage {
+    font-family: 'Noto Serif Khojki';
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre1voyage {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.titre2voyage {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.titre3voyage {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.titre4voyage {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.part1voyage {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.part2voyage {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.part3voyage {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.lien1voyage {
+    color: blueviolet;
+}

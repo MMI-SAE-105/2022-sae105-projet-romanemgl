@@ -1,0 +1,87 @@
+.titrearticle {
+    font-family: 'Bowlby One';
+    font-size: 25px;
+    text-align: center;
+}
+
+.introarticleparadis {
+    font-family: 'Noto Serif Khojki';
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.rectangle {
+    width: 253px;
+    height: 435px;
+    position: absolute;
+    left: -120px;
+    top: 160px;
+    border-radius: 130px;
+}
+
+.titre1 {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.titre2 {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+}
+
+.titre3 {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 0px;
+}
+
+.titre4 {
+    font-family: 'Noto Serif Khojki';
+    text-align: center;
+    font-size: 25px;
+    color: #295855;
+    padding-top: 20px;
+}
+
+.part1 {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.part2 {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.part3 {
+    font-family: 'Noto Serif Khojki';
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.luca {
+    width: 250px;
+    height: 250px;
+    margin-right: 4px;
+    margin-left: 90px;
+}
