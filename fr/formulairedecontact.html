@@ -70,27 +70,44 @@
   </header>
 
   <form action="#">
+ 
+<h1 class="titre-article">Formulaire de contact</h1>
+   <div>
+      <block>
+      <label class="prenom" for="Prénom">Prénom</label>
+   </div>
+   <div>  
+      <input class="inputprenom" type="text" name="Prénom" id="Prénom">
+   </div>
+   <div>
+      <label class="formulairenom"for="Nom">Nom</label>
+      </block>
+   </div>
+   <div>
+      <input class="inputnom" type="text" name="Nom" id="Nom">
+   </div>
+    
     <div>
-      <label for="Prénom">Prénom</label>
-      <input type="text" name="Prénom" id="Prénom">
+      <label class="mail" for="Mail">Mail</label>
     </div>
     <div>
-      <label for="Nom">Nom</label>
-      <input type="text" name="Nom" id="Nom">
+      <input class="inputmail" type="text" name="Mail">
     </div>
     <div>
-      <label for="Mail">Mail</label>
-      <input type="text" name="Mail">
+      <label class="telephone"for="Téléphone">Téléphone</label>
     </div>
     <div>
-      <label for="Téléphone">Téléphone</label>
-      <input type="text" name="Téléphone">
+      <input class="inputtelephone" type="text" name="Téléphone">
     </div>
     <div>
-      <label for="message">Votre message</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+      <label class="message"for="message">Votre message</label>
     </div>
-    <button type="submit">Envoyer</button>
+    <div>
+      <textarea class="message" id="message" name="message" rows="5"></textarea>
+    </div>
+    <div>
+    <button class="boutonenvoyer" type class="submit">Envoyer</button>
+    </div>
   </form>
   </section>
 
