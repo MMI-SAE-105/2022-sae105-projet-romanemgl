@@ -1,3 +1,10 @@
-.photodalida {
-    width: 
+.dalidaphoto {
+     width: 177px;
+     height: 234px;
+     padding-left: 7px;
+}
+
+.introdalida {
+    display: flex;
+    line-height: 25px;
 }
