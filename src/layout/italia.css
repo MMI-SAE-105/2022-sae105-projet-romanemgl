@@ -33,3 +33,15 @@
     font-size: 22px;
 }
 
+.italie-article-intro {
+    display: flex;
+    line-height: 23px;
+}
+
+.photo-italie1 {
+    width: 148px;
+    height: 248px;
+    padding-left: 10px;
+}
+
+

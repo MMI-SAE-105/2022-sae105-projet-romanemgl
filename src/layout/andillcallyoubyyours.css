@@ -1,0 +1,17 @@
+.intro-film {
+    display: flex;
+}
+
+.imagefilm {
+    width: 220px;
+    height: 220px;
+    padding-right: 8px;
+}
+
+.film-p1 {
+    display: flex;
+}
+
+.synopsis-film {
+    display: flex;
+}
