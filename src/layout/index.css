@@ -32,6 +32,7 @@
 .article2 {
     font-family: 'Bowlby One';
     font-size: 20px;
+
 }
 
 .article3 {
@@ -88,4 +89,44 @@
     margin-bottom: 30px;
     margin-right: 10px;
     font-size: 17px;
+}
+
+.index-article1 {
+    display: flex;
+    margin-right: 10px;
+}
+
+.index-article2 {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 10px ;
+}
+
+.index-article6 {
+    display: flex;
+    margin-left: 130px;
+    margin-right: 10px ;
+}
+
+.index-photo3 {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 10px ;
+}
+
+.index-photo4 {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 10px ;
+}
+
+.index-photo5 {
+    margin-left: 50px;
+    margin-right: 10px ;
+}
+
+.index-photo6 {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 10px ;
 }

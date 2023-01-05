@@ -42,3 +42,28 @@ img {
     height: 225px;
     padding-left: 8px;
 }
+
+.projet-autre {
+    font-family: 'Bowlby One';
+    font-weight: normal;
+    text-align: center;
+}
+
+.nom-autre {
+    text-align: center;
+    font-size: 'Noto Serif Khojki' ;
+}
+
+.mot-glossaire {
+    font-family: 'Bowlby One';
+    font-weight: normal;
+    font-size: medium; 
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.def-glossaire {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}

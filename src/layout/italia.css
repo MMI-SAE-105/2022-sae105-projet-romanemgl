@@ -18,6 +18,7 @@
     background-color: #295855;
     height: 170px;
     width: 145px;
+    margin-left: 30%;
 }
 
 .boutonclique {
@@ -43,5 +44,7 @@
     height: 248px;
     padding-left: 10px;
 }
+
+
 
 

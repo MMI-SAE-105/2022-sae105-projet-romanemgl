@@ -18,7 +18,7 @@
 
 @import url('layout/letempsdesfleurs.css');
 
-@import url('layout/projet.css');
+@import url('layout/notreprojet.css');
 
 @import url('layout/andillcallyoubyyours.css');
 
@@ -29,3 +29,5 @@
 @import url('layout/nuirealabiodiversite.css');
 
 @import url('layout/formulairedecontact.css');
+
+@import url('layout/lesautresprojets.css');
