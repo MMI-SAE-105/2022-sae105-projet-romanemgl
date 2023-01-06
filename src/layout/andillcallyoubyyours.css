@@ -15,3 +15,36 @@
 .synopsis-film {
     display: flex;
 }
+
+.film1 {
+    width: 154px;
+    height: 236px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.film2 {
+    width: 154px;
+    height: 236px;
+    margin-left: 200px;
+    margin-top: -75px;
+}
+
+.film3 {
+    width: 154px;
+    height: 236px;
+    margin-left: 25px;
+    margin-top: -75px;
+}
+
+.film4 {
+    width: 154px;
+    height: 236px;
+    margin-left: 200px;
+    margin-top: -75px;
+}
+
+.biba {
+    text-decoration: underline;
+    color: #95534C;
+}

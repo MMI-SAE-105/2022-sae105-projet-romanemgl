@@ -67,3 +67,10 @@ img {
     margin-left: 10px;
     margin-bottom: 30px;
 }
+
+.titre-film {
+    text-align: center;
+    font-family: 'Bowlby One';
+    color: #95534C;
+    font-size: small;
+}
