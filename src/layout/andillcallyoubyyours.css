@@ -44,7 +44,21 @@
     margin-top: -75px;
 }
 
-.biba {
-    text-decoration: underline;
-    color: #95534C;
+
+figure {
+    border: none;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Noto Serif Khojki' ;
+    font-size: small;
 }
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+

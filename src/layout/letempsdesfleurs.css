@@ -14,3 +14,21 @@
     height: 184,25px;
 }
 
+
+
+.figure2 {
+    
+    border: none;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  
+}
+
+.img {
+    max-width: 220px;
+    max-height: 150px;
+    margin-left: 10px;
+}

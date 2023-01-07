@@ -2,74 +2,73 @@
     color:  #95534C;
     font-family: 'Noto Serif Khojki';
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .formulairenom {
     color:  #95534C;
     font-family: 'Noto Serif Khojki';
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .mail {
     color:  #95534C;
     font-family: 'Noto Serif Khojki';
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .telephone {
     color:  #95534C;
     font-family: 'Noto Serif Khojki';
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .message {
-    color:  #95534C;
     font-family: 'Noto Serif Khojki';
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .inputprenom {
     width: 90px;
     margin-bottom: 10px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .inputnom {
     width: 90px;
     margin-bottom: 10px;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .inputmail {
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .inputtelephone {
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .inputmail {
     width: 100px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .message {
     width: 180px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .boutonenvoyer {
     background-color: #295855;
     border-radius: 10px;
-    color: #eeeeee;
+    color: black;
     text-align: center;
     font-size: 12px;
     padding: 20px;

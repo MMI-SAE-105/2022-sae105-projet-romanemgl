@@ -1,9 +1,3 @@
-.luca {
-    width: 160px;
-    height: 232px;
-    margin-top: 90px;
-}
-
 .frise {
     box-sizing: border-box;
     position: relative;
@@ -34,11 +28,10 @@
 }
 
 .frise article + article {
-    margin-top: 15px;
-    margin-right: 5;
+    margin-top: 20px;
 }
 
-.timeline article:before {
+.frise article:before {
     content: "";
     display: block;
     position: absolute;
@@ -47,10 +40,10 @@
     background: #d6d6d6;
     width: 24px;
     height: 24px;
-    border: 6px #346abf solid;
+    border: 6px #95534C solid;
     border-radius: 50%;
     z-index: 2;
-  }
+}
 
 .frise article:after {
     content: "";
@@ -62,12 +55,12 @@
     border-top: 20px solid transparent;
     border-left: 16px solid #eeeeee;
     border-bottom: 20px solid transparent;
-}
+  }
+
 
 .frise article:nth-child(even) {
     margin-left: calc( 50% + 48px );
 }
-
 
 .frise article:nth-child(even):before {
     left: auto;

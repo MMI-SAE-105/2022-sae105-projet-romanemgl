@@ -36,19 +36,35 @@
 
 .italie-article-intro {
     display: flex;
-    line-height: 23px;
 }
 
 .photo-italie1 {
     width: 148px;
     height: 248px;
-    padding-left: 10px;
 }
 
 .video-italie {
     width: 150px;
     padding-left: 120px;
 }
+
+figure {
+    border: none;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Noto Serif Khojki' ;
+    font-size: small;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
 
 
 
