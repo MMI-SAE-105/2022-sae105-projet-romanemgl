@@ -1,27 +1,27 @@
-figure {
+.voyage-article1 {
     border: none;
     display: flex;
     flex-flow: column;
     padding: 5px;
     max-width: 220px;
     margin: auto;
+    text-align: center;
 }
-
-img {
+.voyage-article-image{
     max-width: 220px;
     max-height: 150px;
 }
 
-figure {
+.voyage-article2 {
     border: none;
     display: flex;
     flex-flow: column;
     padding: 5px;
     max-width: 220px;
     margin: auto;
+    text-align: center;
 }
-
-img {
+.voyage-article-image2 {
     max-width: 280px;
     max-height: 150px;
 }

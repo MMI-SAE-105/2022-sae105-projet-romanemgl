@@ -48,7 +48,7 @@
     padding-left: 120px;
 }
 
-figure {
+.italie-article-photo {
     border: none;
     display: flex;
     flex-flow: column;
@@ -60,7 +60,7 @@ figure {
     font-size: small;
 }
 
-img {
+.article-italie-paysage {
     max-width: 220px;
     max-height: 150px;
 }

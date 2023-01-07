@@ -74,4 +74,18 @@
     border-right: 16px solid #eeeeee;
   }
 
+.frise__texte {
+    text-align: center;
+}
+
+.article-paradis-vespa {
+    border: none;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    text-align: center;
+}
+
 

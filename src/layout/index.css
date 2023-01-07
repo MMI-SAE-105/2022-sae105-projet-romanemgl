@@ -1,6 +1,6 @@
 .image-accueil-site {
-    height: 2;
-    width: 40;
+    height: 100%;
+    width: 100%;
 }
 
 .titresite {
@@ -13,14 +13,13 @@
 }
 
 .titre2 {
-    margin-left: 0.1;
-    margin-left: 0.1;
-    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
     text-align: center;
     color: black;
     text-decoration: none;
     color: black;
-    size: 5px;
 }
 
 .article1 {

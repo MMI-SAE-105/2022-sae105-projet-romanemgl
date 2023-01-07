@@ -1,22 +1,12 @@
-.dalidaphoto {
-     width: 177px;
-     height: 234px;
-     padding-left: 7px;
-}
+
 
 .introdalida {
     display: flex;
     line-height: 25px;
 }
 
-.disquephoto {
-    width: 133,72px;
-    height: 184,25px;
-}
 
-
-
-.figure2 {
+.dalida-article-photo {
     
     border: none;
     display: flex;
@@ -24,10 +14,24 @@
     padding: 5px;
     max-width: 220px;
     margin: auto;
-  
+}
+.dalida-article-chanson {
+    border: none;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    text-align: center;
 }
 
-.img {
+.dalida-article-image {
+    max-width: 220px;
+    max-height: 150px;
+    margin-left: 10px;
+}
+
+.dalida-article-image2 {
     max-width: 220px;
     max-height: 150px;
     margin-left: 10px;

@@ -3,12 +3,23 @@
     font-size: large;
 }
 
+.intro-projet-romane {
+    margin-left: 8px;
+}
+.projet1 {
+    text-align: center;
+}
+
+.projet2 {
+    text-align: center;
+}
+
 .projetimage1 {
     margin-top: 30px;
     width: 309px;
     height: 106px ;
     margin-right: 20px;
-    
+
 }
 
 .projetimage2 {
@@ -16,4 +27,5 @@
     width: 281px;
     height: 117px;
     margin-right: 90px;
+    text-align: center;
 }

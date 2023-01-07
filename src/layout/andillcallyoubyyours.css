@@ -17,6 +17,7 @@
 }
 
 .film1 {
+    display: flex;
     width: 154px;
     height: 236px;
     margin-left: 40px;
@@ -24,6 +25,7 @@
 }
 
 .film2 {
+    display: flex;
     width: 154px;
     height: 236px;
     margin-left: 200px;
@@ -31,6 +33,7 @@
 }
 
 .film3 {
+    display: flex;
     width: 154px;
     height: 236px;
     margin-left: 40px;
@@ -38,6 +41,7 @@
 }
 
 .film4 {
+    display: flex;
     width: 154px;
     height: 236px;
     margin-left: 200px;
@@ -45,7 +49,7 @@
 }
 
 
-figure {
+.film-affiche {
     border: none;
     display: flex;
     flex-flow: column;
@@ -57,8 +61,10 @@ figure {
     font-size: small;
 }
 
-img {
+.film-affiche-image {
     max-width: 220px;
     max-height: 150px;
 }
+
+
 
