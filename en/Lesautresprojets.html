@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What it was to be eighteen</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+    
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/index.html">
+                <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn">
+                <img src="/assets/icones/globe1.svg" alt="icone langage">
+                <span></span>
+            </button>
+
+<!--début menu-->
+            <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+                class="header__menuBtn">
+                <img src="/assets/icones/Menu.svg" alt="menu">
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+            <ul class="menu__list">
+                <p class="nosarticles"> Our articles </p>
+                <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+                        by
+                        mine</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">Futur tourism</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+                </li>
+            </ul>
+            <ul>
+                <p class="ensavoirplus">More & more</p>
+                <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début page autres projets-->
+    <main>
+        <h1 class="titre-article">The other projects</h1>
+        <h2 class="intro-article-projets">In this part, you can find my classmates projects. </h2>
+        <ul>
+            
+            <a href="https://mind-interest.marionmura.fr/">
+            <li class="projet-autre">Mind Interest</li>
+            <p class="nom-autre">Marion MURA</p></a>
+
+
+            <a href="http://vers-un-monde-utopique.albanluc.fr/">
+            <li class="projet-autre"> Vers un monde utopique ?</li>
+            <p class="nom-autre">Alban Luc</p></a>
+
+            <li class="projet-autre"> A quoi ressemblera le monde ?</li>
+            <p class="nom-autre">Ariles Messaoudi</p>
+
+            <li class="projet-autre"> TikTak</li>
+            <p class="nom-autre">Camilia Mokdad</p>
+
+            <li class="projet-autre">Denonciation of the current world</li>
+            <p class="nom-autre">Sofiane Mouadeb</p>
+
+            <a href="http://what-have-we-become.evanmoulin.fr/">
+            <li class="projet-autre"> What we have become</li>
+            <p class="nom-autre">Evan Moulin</p></a>
+
+            <li class="projet-autre"> Time Loop</li>
+            <p class="nom-autre">Marie-Claire Naze</p>
+
+            <li class="projet-autre"> Kairos</li>
+            <p class="nom-autre">Marwa Nezzar</p>
+
+            <li class="projet-autre"> Korean Notes</li>
+            <p class="nom-autre">Léopold Ohnimus</p>
+
+            <li class="projet-autre"> FF all time</li>
+            <p class="nom-autre">Yassir Ouadghiri</p>
+
+            <a href="https://continuous-evolution.yann-pernette.fr/">
+            <li class="projet-autre"> Continuous Evolution</li>
+            <p class="nom-autre">Yann Pernette</p> </ul></a>
+
+            <li class="projet-autre">Last Time</li>
+            <p class="nom-autre">Thomas Poupon</p>
+
+        </ul>
+    </main>
+<!--fin page autres projets-->
+
+<!--début footer-->
+    <footer>
+        <div class="blocfooter">
+            <a href="/">
+
+                <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+            <h3 class="titrefooter">What it was to be eighteen</h3>
+        </div>
+
+
+        <h4 class="contact">CONTACT</h4>
+        <footer class="adresse">
+            <p>4 place Tharradin <br>
+                25200 Montbeliard <br>
+                03 81 99 47 34 <br>
+                dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+            <foooter class="contact">
+                <h4 class="noussuivre">FOLLOW US</h4>
+                <div class="reseaux">
+                    <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
+                            src="/assets/icones/instagram1.svg" alt="logo Instagram"></a>
+                    <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+                            alt="logo Facebook">
+                    </a>
+                    <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+                </div>
+
+
+                <footer class="projet__explication">
+                    <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard</p>
+
+
+                    <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+                </footer>
+<!--fin footer-->

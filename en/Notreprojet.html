@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What it was to be eighteen</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+
+
+  <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+  <header class="header">
+    <div class="header__start">
+      <a href="/index.html">
+        <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+    </div>
+
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn">
+        <img src="/assets/icones/globe1.svg" alt="icone langage">
+        <span></span>
+      </button>
+
+<!--début menu-->
+      <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="/assets/icones/Menu.svg" alt="menu">
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+      <ul class="menu__list">
+        <p class="nosarticles"> Our articles </p>
+        <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">Floral song</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+            by
+            mine</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">The futur tourism</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+        </li>
+      </ul>
+      <ul>
+        <p class="ensavoirplus">More & more</p>
+        <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début article à propos de nous-->
+<main>
+    <h1 class="titre-article">About us</h1>
+    <h2 class="titreprojet2">Who are we?  </h2>
+
+    <p class="intro-article">In order to present my first semester project for my studies in MMI, we had to create from the top to the bottom a website in which we talk to our futur self.</p>
+
+       
+
+      <p class="intro-projet-romane">Hi everyone, welcome on my website What it was to be eighteen. I'm Romane MIGUEL, I'm recently 18 and I'm currently in MMI. </p>
+    
+      <figure class="projet1">
+        <img class="projetimage1" src="/assets/images/20221116/images1.webp"
+             alt="Photo de l'amphitéathre de MMI">
+        <figcaption>Our amphitheater</figcaption>
+    </figure>
+
+    <figure class="projet2">
+      <img class="projetimage2" src="/assets/images/20221116/tumblr_ngkyx4VRP01tx9oj2o1_12801.webp"
+           alt="Photo du BUT MMI Montbeliard">
+      <figcaption>Our BUT</figcaption>
+  </figure>
+
+  </main>
+<!--fin article à propos de nous-->
+
+<!--début footer-->
+  <footer>
+    <div class="blocfooter">
+      <a href="/index.html">
+
+        <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+      <h3 class="titrefooter">What it was to be eighteen</h3>
+    </div>
+
+
+    <h4 class="contact">CONTACT</h4>
+    <footer class="adresse">
+      <p>4 place Tharradin <br>
+        25200 Montbeliard <br>
+        03 81 99 47 34 <br>
+        dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+      <foooter class="contact">
+        <h4 class="noussuivre">FOLLOW US</h4>
+        <div class="reseaux">
+          <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="/assets/icones/instagram1.svg"
+              alt="logo Instagram"></a>
+          <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+              alt="logo Facebook">
+          </a>
+          <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+        </div>
+
+
+        <footer class="projet__explication">
+          <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard</p>
+
+
+          <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+        </footer>
+<!--fin footer-->

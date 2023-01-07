@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What it was to be eighteen</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+
+
+  <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+  <header class="header">
+    <div class="header__start">
+      <a href="/index.html">
+        <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+    </div>
+
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn">
+        <img src="/assets/icones/globe1.svg" alt="icone langage">
+        <span></span>
+      </button>
+
+<!--debut menu-->
+      <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="/assets/icones/Menu.svg" alt="menu">
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+      <ul class="menu__list">
+        <p class="nosarticles"> Our articles </p>
+        <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+            by
+            mine</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">Futur tourism</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+        </li>
+      </ul>
+      <ul>
+        <p class="ensavoirplus">More & more</p>
+        <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début article sur le lieu-->
+  <main>
+    <h1 class="titre-article">Liytle paradise</h1>
+    <h2 class="intro-article">Your little piece of paradise. In five days it has conquered your heart, your sisters’ one, and without a doubt, the one of thousands of other visitors. 
+      Located in the northwest of Italy, in the province of La Spezia, which is the largest city next to these beautiful villages. The so-called "five lands" are actually 5 villages perched on hills, with their feet in the Mediterranean: Riomaggiore, Manarola, Corniglia, Vernazza, and finally Monterosso al Mar. Each one more idyllic than the other, these villages are characterized by their charming, brightly colored facades that contrast with the blue of the sea. 
+      
+    </h2>
+    <h3 class="h2-article">How to go in it ?</h3>
+    <p class="p-article">Accessible by train, with a magnificent view of the sea, the journey will never be as pleasant. Its narrow roads in the villages make it difficult to reach by car. But after all, what would a stay in Italy be without a Vespa ride?  </p>
+
+
+      <figure class="article-paradis-vespa">
+        <img class="article-paradis-vespa" src="/assets/images/20221118/ruslan-bardash-xRdZIt66FSE-unsplash1.webp"
+             alt="Photo d'une Vespa Italienne">
+        <figcaption>the Vespa : the italian transport</figcaption>
+    </figure>
+
+    <h3 class="h2-article">What activities ?</h3>
+    <p class="p-article">Swimming in the fishermen's coves will be refreshing and with a view of the beautiful villages from the sea. The water is turquoise and home to many fish. 
+      Above the villages, on the mountainside, hundreds of vineyards are sunbathing. 
+      There are many activities to do in the Cinque Terre, walks and hikes on the paths, in which you will need a good pair of shoes, as the villages are all on hills or stairs. But also a tasting of local wine. Indeed the vineyards, located just behind the village, take the sun in a perfect setting for them, in the hills. Admire the sunset or go window shopping... But in the end, what could be better than admiring the landscape while eating a good local pizza? 
+      
+    </p>
+        
+    <h3 class="h2-article">A classified Site  </h3>
+
+    <p class="p-article">The Cinque Terre, or should I say "Cinque Teare", has recently been declared a UNESCO World Heritage Site. They will make you fall in love with the real Italy, as I did while traveling with my sisters. I have a nostalgic memory of it. And Disney also spotted the places... The release of the cartoon "Luca", in which the main character is from this Italian paradise, perfectly illustrates these villages, specifically the one in Vernazza. It seems to be a wonderful representation of the beautiful region of Liguria.
+    </p>
+<!--début frise-->
+    <h3 class="h2-article">chronologically </h3>
+    <div class="frise">
+
+        <article class="frise__texte">
+          <h2>XIe century</h2>
+          <ul>
+            <li><span>the first historical documents mentioning the Cinque Terre</span>
+          </ul>
+        </article>
+
+        <article class="frise__texte">
+          <h2>XVIe century</h2>
+          <ul>
+            <li><span>Reinforcement of the old fortifications and construction of new defense towers</span> 
+          </ul>
+        </article>
+
+        <article class="frise__texte">
+          <h2>XVIIe century</h2>
+          <ul>
+            <li><span>Realization of the railroad between La Spezia and Gennes which put an end to the isolation of the villages</span> 
+          </ul>
+        </article>
+
+        <article class="frise__texte">
+          <h2>1960</h2>
+          <ul>
+            <li><span>Renewal of the region since the 60's thanks to the numerous tourists coming from all over Europe</span> 
+          </ul>
+        </article>
+
+      </div>
+<!--fin frise-->
+  </main>
+<!--fin article sur le lieu-->
+<!--début footer-->
+  <footer>
+    <div class="blocfooter">
+      <a href="/index.html">
+
+        <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+      <h3 class="titrefooter">What it was to be eighteen</h3>
+    </div>
+
+
+    <h4 class="contact">CONTACT</h4>
+    <footer class="adresse">
+      <p>4 place Tharradin <br>
+        25200 Montbeliard <br>
+        03 81 99 47 34 <br>
+        dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+      <foooter class="contact">
+        <h4 class="noussuivre">FOLLOW US</h4>
+        <div class="reseaux">
+          <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="/assets/icones/instagram1.svg"
+              alt="logo Instagram"></a>
+          <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+              alt="logo Facebook">
+          </a>
+          <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+        </div>
+
+
+        <footer class="projet__explication">
+          <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard</p>
+
+
+          <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+        </footer>
+<!--fin footer-->

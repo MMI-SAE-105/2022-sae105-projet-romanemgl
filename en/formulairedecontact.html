@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What it was to be eighteen</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+
+  <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+  <header class="header">
+    <div class="header__start">
+      <a href="/index.html">
+        <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+    </div>
+
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn">
+        <img src="/assets/icones/globe1.svg" alt="icone langage">
+        <span></span>
+      </button>
+
+<!--début menu-->
+      <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="/assets/icones/Menu.svg" alt="menu">
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+      <ul class="menu__list">
+        <p class="nosarticles"> Our articles </p>
+        <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+            by
+            mine</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">Futur tourism</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+        </li>
+      </ul>
+      <ul>
+        <p class="ensavoirplus">More & more</p>
+        <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--fin menu-->
+<!--fin header-->
+  <form action="#">
+
+<!--début page contact-->
+<h1 class="titre-article">Contact form</h1>
+<p class="contact-aide">Hi! How can I help you? </p>
+   <div>
+      <block>
+      <label class="prenom" for="Prénom">Name</label>
+   </div>
+   <div>  
+      <input class="inputprenom" type="text" name="Prénom" id="Prénom">
+   </div>
+   <div>
+      <label class="formulairenom"for="Nom">Last Name</label>
+      </block>
+   </div>
+   <div>
+      <input class="inputnom" type="text" name="Nom" id="Nom">
+   </div>
+    
+    <div>
+      <label class="mail" for="Mail">Mail</label>
+    </div>
+    <div>
+      <input class="inputmail" type="text" name="Mail">
+    </div>
+    <div>
+      <label class="telephone"for="Téléphone">Phone Number</label>
+    </div>
+    <div>
+      <input class="inputtelephone" type="text" name="Téléphone">
+    </div>
+    <div>
+      <label class="message"for="message">Your message</label>
+    </div>
+    <div>
+      <textarea class="message" id="message" name="message" rows="5"></textarea>
+    </div>
+    <div>
+    <button class="boutonenvoyer" type class="submit">Send</button>
+    </div>
+  </form>
+  </section>
+
+  </main>
+<!--fin page contact-->
+
+<!--début footer-->
+  <footer>
+    <div class="blocfooter">
+      <a href="/">
+
+        <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+      <h3 class="titrefooter">What it was to be eighteen</h3>
+    </div>
+
+
+    <h4 class="contact">CONTACT</h4>
+    <footer class="adresse">
+      <p>4 place Tharradin <br>
+        25200 Montbeliard <br>
+        03 81 99 47 34 <br>
+        dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+      <foooter class="contact">
+        <h4 class="noussuivre">FOLLOW US</h4>
+        <div class="reseaux">
+          <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="/assets/icones/instagram1.svg"
+              alt="logo Instagram"></a>
+          <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+              alt="logo Facebook">
+          </a>
+          <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+        </div>
+
+
+        <footer class="projet__explication">
+          <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard  </p>
+
+
+          <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+        </footer>
+<!--fin footer-->

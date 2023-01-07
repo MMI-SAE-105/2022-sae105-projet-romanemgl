@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What it was to be eighteen</title>
+
+  <link rel="stylesheet" href="/src/style.css">
+  
+  <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+
+<!--début header-->
+
+<body>
+  <header class="header">
+    <div class="header__start">
+      <a href="/index.html">
+        <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+    </div>
+
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn">
+        <img src="/assets/icones/globe1.svg" alt="icone langage">
+        <span></span>
+      </button>
+
+<!--début menu-->
+
+      <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="/assets/icones/Menu.svg" alt="menu">
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+      <ul class="menu__list">
+        <p class="nosarticles"> Our articles </p>
+        <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+        <li class="menuitem"><a class="menulink" href="">Little paradise</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+            by
+            mine</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">the futur tourism</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+        </li>
+      </ul>
+      <ul>
+        <p class="ensavoirplus">More & more</p>
+        <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects </a>
+        </li>
+        <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+        <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début article sur ma crainte-->
+  <main>
+    <h1 class="titre-article">The drifts</h1>
+    <h2 class="intro-article">Instagram, one of the biggest social networks of our era, which initially has the simple purpose of posting photos taken by users, has grown enormously during the previous years. Now we can even post temporary storys, short videos called Real ...
+      According to a study, 39% of French Internet users use Instagram. 
+      1.287 billion active users in 2022 worldwide. 
+      This expresses well the influence that this application has on the lives of users, their opinions, humor or even clothing style .
+      
+    </h2>
+
+    <h3 class="h2-article">The unhealthy influence</h3>
+    <p class="p-article">This app has a great influence as we said, but what worries me is the influence it has on the destinations that users choose for their trip.
+      But, when users  post in mass idyllic landscapes of their trip, these photos end up in the feed of more and more users and gain notoriety. Good things for the country tourism you will say...
+      Unfortunately it can harm the landscape. By being incited to visit these places, visitors run in mass there, even if it means destroying them. 
+      Indeed some places are not made to welcome a crowd of tourists, the creeks of Marseille for example knows an influx of visitors and it is difficult for local authorities to manage the waste left by disrespectful tourists on the environment, or even the damage to the marine flora because of toxic product, as the sun cream. 
+      
+    </p>
+
+    <figure class="biodiversite-article-photo">
+      <img class="imagebiodiversite" src="/assets/images/39337e8_29951-wxa0dc1.webp"
+           alt="Photo Grèce bondé de touristes">
+      <figcaption>Crowded Mykonos</figcaption>
+  </figure>
+
+
+  
+
+    <p class="p-article">Or Mykonos, a town in Greece where the inhabitants see their streets crowded by tourists, trying to pose in front of the magnificent sunsets... By doing this, they deteriorate the landscape. 
+      Or in Spain, where the authorities have noticed the habits of tourists to move rocks to pose on them. Without knowing that these are the refuge of lizards, insects and spiders. 
+      
+      These examples show that the fauna and flora are now in the hands of social networks influence that change people’s reactions or what they do for a simple selfie.
+      
+    </p>
+  </main>
+<!--fin article sur ma crainte-->
+
+<!--début footer-->
+  <footer>
+    <div class="blocfooter">
+      <a href="/index.html">
+
+        <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+      </a>
+      <h3 class="titrefooter">What it was to be eighteen</h3>
+    </div>
+
+
+    <h4 class="contact">CONTACT</h4>
+    <footer class="adresse">
+      <p>4 place Tharradin <br>
+        25200 Montbeliard <br>
+        03 81 99 47 34 <br>
+        dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+      <foooter class="contact">
+        <h4 class="noussuivre">FOLLOW US</h4>
+        <div class="reseaux">
+          <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img src="/assets/icones/instagram1.svg"
+              alt="logo Instagram"></a>
+          <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+              alt="logo Facebook">
+          </a>
+          <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+        </div>
+
+
+        <footer class="projet__explication">
+          <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard</p>
+
+
+          <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+        </footer>
+<!--fin footer-->

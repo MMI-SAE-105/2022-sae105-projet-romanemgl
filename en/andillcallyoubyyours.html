@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What it was to be eighteen</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+    
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/index.html">
+                <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn">
+                <img src="/assets/icones/globe1.svg" alt="icone langage">
+                <span></span>
+            </button>
+<!--début menu-->
+
+            <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+                class="header__menuBtn">
+                <img src="/assets/icones/Menu.svg" alt="menu">
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+            <ul class="menu__list">
+                <p class="nosarticles"> Our articles </p>
+                <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+                        by
+                        mine</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">Futur tourism</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+                </li>
+            </ul>
+            <ul>
+                <p class="ensavoirplus">More & more</p>
+                <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début article film-->
+    <main>
+        <h1 class="titre-article">And I'll call you by mine</h1>
+
+            <div class="intro-film">
+        <h2 class="intro-article">Aged 17, you discovered this film and it illustrate what you love on romantic film with perfection. You are transported by the story and the songs on it. </h2>
+
+            <figure class="film-affiche">
+                <img class="film-affiche-image"src="/assets/images/20221122/51kOcECUQcL._SL500_1.webp"
+                     alt="Affiche du film Call me by your name">
+                <figcaption>Poster of the movie Call me by your name</figcaption>
+            </figure>
+
+            </div>
+
+        <h3 class="h2-article">Some words about the producer  </h3>
+        <p class="p-article">Luca Guadagnino is a producer, movie maker and scenarist Italian aged 51 years old. In 22 years of carrier, he made 24 movies and series, has 19 nominations on which he has won the best film scenario for Call Me By Your Name and the Empire Awards for the best film.  </p>
+
+        <h3 class="h2-article">Luca Guadagnino's filmography</h3>
+
+
+        <div class="film1"></div>
+            <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=273342.html">
+        <img class="filmographie1" src="/assets/images/20221122/image2.webp" alt="Bones and All affiche"></a>
+
+
+        <div class="film2"></div>
+            <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=230634.html">
+        <img class="filmographie2"src="/assets/images/20221122/image3.webp" alt="A bigger splash affiche"></a>
+        
+            
+        <div class="film3"></div>
+            <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=135915.html">
+        <img class="filmographie3" src="/assets/images/20221122/image4.webp" alt="L'amore affiche"></a>
+        
+
+        <div class="film4"></div>
+            <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=138600.html">
+        <img class="filmographie4"src="/assets/images/20221122/image5.webp" alt="Suspiria affiche"></a>
+        
+
+
+        <h3 class="h2-article">the cast led by Timothee </h3>
+        <p class="p-article">On the casting, the main character are two young men named Armie Hammer, also known for the movie “Mort sur le Nil” and Timothee Chalamet who also played in the movie “Dune”. This shooting bring them in the front stage et both have movies planned for 2023.  </p>
+
+        <h3 class="h2-article">The romantic synopsis</h3>
+        <p class="p-article">During summer 1983, the main character Elio Perlman is on vacation in North Italia with his family in their family’s house. The atmosphere is calm, just like the family’s mood : soft music, sun and swimming under the olive trees. 
+            During this vacation which sounded calm, Elio father, a teacher specialized in the Greco roman culture bring a young doctor to work with him : Oliver. 
+            Little by little on the film, we discovered an Italian love affair between the two young men, who are going to know youthful love. 
+            Aged 17, you discovered this film and it bring image to what you love on romantic film with perfection. You are transported by the story and the songs on it.
+            </p>
+
+        <h3 class="h2-article">What the critics think of it</h3>
+        <p class="p-article">“Behind the magnificent Italian “Dolce Vita”, one of the most deeply moving and sexy movie about the birth of desire and first love.”
+            
+                    <a class="biba" href="https://www.allocine.fr/film/fichefilm-252439/critiques/presse/">Biba</a>
+        </p>
+
+        <p class="p-article"> “A sublime sentimental education, sophisticated and though universal, really sensual and literary who give a lot of chills and tears.”
+            <a href="https://www.allocine.fr/film/fichefilm-252439/critiques/presse/">CinemaTeaser</a>
+        </p>
+    </main>
+<!--fin article film-->
+
+<!--début footer-->
+    <footer>
+        <div class="blocfooter">
+            <a href="/">
+
+                <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+            <h3 class="titrefooter">What it was to be eighteen</h3>
+        </div>
+
+
+        <h4 class="contact">CONTACT</h4>
+        <footer class="adresse">
+            <p>4 place Tharradin <br>
+                25200 Montbeliard <br>
+                03 81 99 47 34 <br>
+                dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+            <foooter class="contact">
+                <h4 class="noussuivre">FOLLOW US</h4>
+                <div class="reseaux">
+                    <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
+                            src="/assets/icones/instagram1.svg" alt="logo Instagram"></a>
+                    <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+                            alt="logo Facebook">
+                    </a>
+                    <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+                </div>
+
+
+                <footer class="projet__explication">
+                    <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard   
+
+                    </p>
+
+
+                    <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+                </footer>
+<!--footer-->

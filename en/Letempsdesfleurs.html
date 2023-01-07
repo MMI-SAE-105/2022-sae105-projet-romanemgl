@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What it was to be eighteen</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+
+
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+</head>
+<!--début header-->
+<body>
+    <header class="header">
+        <div class="header__start">
+            <a href="/index.html">
+                <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn">
+                <img src="/assets/icones/globe1.svg" alt="icone langage">
+                <span></span>
+            </button>
+<!--début menu-->
+
+            <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+                class="header__menuBtn">
+                <img src="/assets/icones/Menu.svg" alt="menu">
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
+
+            <ul class="menu__list">
+                <p class="nosarticles"> Our articles </p>
+                <li class="menuitem"><a class="menulink" href="/en/Italia.html">Italy</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Petitcoindeparadis.html">Little paradise</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Letempsdesfleurs.html">A floral song</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/andillcallyoubyyours.html">...And I'll call you
+                        by
+                        mine</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/levoyagedufutur.html">Futur tourism</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/nuirealabiodiversite.html">The drifts</a>
+                </li>
+            </ul>
+            <ul>
+                <p class="ensavoirplus">More & more</p>
+                <li class="menuitem"><a class="menulink" href="/en/Notreprojet.html">About us</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/Lesautresprojets.html">The other projects</a>
+                </li>
+                <li class="menuitem"><a class="menulink" href="/en/Glossaire.html">Glossary</a></li>
+                <li class="menuitem"><a class="menulink" href="/en/formulairedecontact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+<!--fin menu-->
+<!--fin header-->
+
+<!--début article chanson-->
+    <main>
+        <h1 class="titre-article">A floral song</h1>
+        <div class="introdalida">
+
+            <figure class="dalida-article-photo">
+                <img class="dalida-article-image" src="/assets/images/20221119/gettyimages_141551832_jpg_2381.webp"
+                     alt="Photo de Dalida">
+                <figcaption>Dalida's picture </figcaption>
+            </figure>
+
+        
+            
+
+        <h2 class="intro-article">Flowers’ time, à cherish song of yours, it make you full of nostalgia. When you are listening to it, to came back to the time where you where in Charente at your grand parents house, they made you listen to their favorite singer from where grandpa is from… 
+        </h2>
+            </div>
+        <h3 class="h2-article">Some words about her  </h3>
+        <p class="p-article">Dalida, from her real name Yolanda Gigliotti, was born in Caire, Egyptia on January 17th 1933. She’s from an Italian household, and she came live in France at the age of 21 in hope to start her carrier in the musical industry. 
+            In order to do so, she took sing classes, make some show in cabarets and finally got a contract with a label with Eddy Barclay. Her carrier started in 1956 thank to her song Bambino. 
+            
+        </p>
+
+        <h3 class="h2-article">Her story</h3>
+        <p class="p-article">Dalida became the first female artist who receive a gold single one year after the release of Bambino, she was putted on first page of many newspaper, received the Oscar of Monte Carlo seven years consecutive ! She became really quickly a real italian icon transgenerational in France and all around the world, notably for you grandpa. 
+            Indeed, during her carrier, dalida wrote her songs in the language of her heart, French, than in her natal language, Italian. 
+            
+        </p>
+
+        <figure class="dalida-article-chanson">
+            <img class="dalida-article-image2" src="/assets/images/image 10.webp"
+                 alt="Chansons de Dalida">
+            <figcaption>Dalida's songs</figcaption>
+        </figure>
+
+
+        <h3 class="h2-article">A tragic story</h3>
+        <p class="p-article">That is in 1987 that Dalida killed herself in Montmartre, Paris. During her glory days, at the age of 54, the artiste died, letting behind her the image of an engaged, talented and iconic women. 
+        </p>
+
+        <h3 class="h2-article">My favorite</h3>
+        <p class="p-article">Initially released in the twenties, Le temps des fleurs how we know it is actually a cover of Dalida from a Russian band. That is in 1968 that the famous Italian women sing it. The song became famous all over the world, and permits her to won her twenty golden single. 
+            Dalida sing that song in French, but actually also in Italian and German. These covers bring her on the top 10. 
+            There is also an English version sing by Mary Hopkin, who also has a lot of success. 
+            You loved that so much because of the joy in it, you remember yourself dancing around the table with him. 
+            
+        </p>
+
+    </main>
+<!--fin article chanson-->
+
+<!--début footer-->
+    <footer>
+        <div class="blocfooter">
+            <a href="/">
+
+                <img class="imagelogo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
+            </a>
+            <h3 class="titrefooter">What it was to be eighteen</h3>
+        </div>
+
+
+        <h4 class="contact">CONTACT</h4>
+        <footer class="adresse">
+            <p>4 place Tharradin <br>
+                25200 Montbeliard <br>
+                03 81 99 47 34 <br>
+                dut-mmi-montbeliard@univ-fcomte.fr <br> </p>
+            <foooter class="contact">
+                <h4 class="noussuivre">FOLLOW US</h4>
+                <div class="reseaux">
+                    <a href="https://www.instagram.com/mmi_montbeliard/?hl=fr"><img
+                            src="/assets/icones/instagram1.svg" alt="logo Instagram"></a>
+                    <a href="https://fr-fr.facebook.com/mmimontbeliard/"><img src="/assets/icones/facebook1.svg"
+                            alt="logo Facebook">
+                    </a>
+                    <a href="http://mmimontbeliard.com/"><img src="/assets/icones/logo_mmi1.svg" alt="logo MMI"></a>
+                </div>
+
+
+                <footer class="projet__explication">
+                    <p class="moi">This project was made for a pedagogic exercice in the MMI department of Montbeliard</p>
+
+
+                    <p class="nom">Romane MIGUEL MMI1 B2</p>
+
+                </footer>
+<!--fin footer-->
