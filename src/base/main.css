@@ -7,6 +7,15 @@
     color: #295855;
 }
 
+body {
+    margin: 0cm;
+}
+
+.container{
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+}
+
 .intro-article {
     font-family: 'Noto Serif Khojki';
     font-size: medium;
@@ -62,4 +71,6 @@
     margin-left: 10px;
     margin-bottom: 30px;
 }
+
+
 

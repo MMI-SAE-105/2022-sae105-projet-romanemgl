@@ -1,52 +1,40 @@
 footer {
     background: #306562;
+    padding: 15px 15px 15px 15px;
 }
 
-.imagelogo {
-    margin-left: 0.4cm;
+.footer__img-logo {
     margin-top: 0.4cm;
 }
 
-.blocfooter {
+.footer__blocfooter {
     display: flex;
 }
 
-.titrefooter {
+.footer__titre-footer {
     font-family: 'Bowlby One';
     font-size: 14px;
     margin-left: 25px;
     margin-top: 27px;
+    font-weight: 500;
 }
 
-.contact {
-    margin-left: 27px;
+.footer__sous-titre {
     font-family: 'Bowlby One';
+    font-weight: 500;
 }
 
-.adresse {
-    margin-left: 10px;
-    font-family: 'Noto Serif Khojki';
+.footer__adresse {
+    font-family: var(--font-serif);
+    line-height: 0.5rem;
+}
+.footer__mention-legale {
+    font-family: var(--font-serif);
 }
 
-.noussuivre {
-    margin-left: 0.5cm;
-    font-family: 'Bowlby One';
-}
+.footer__lien {
+    color: black;
+    text-decoration: underline;
+  }
 
-.moi {
-    margin-left: 0.2cm;
-    font-family: 'Noto Serif Khojki';
-}
 
-.nom {
-    margin-left: 0.2cm;
-    font-family: 'Noto Serif Khojki';
-}
-
-body {
-    margin: 0cm;
-}
-
-.reseaux {
-    margin-left: 0px;
-}

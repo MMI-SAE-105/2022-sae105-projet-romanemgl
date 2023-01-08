@@ -1,0 +1,21 @@
+:root{
+/* Color styles */
+--couleur-écriture-site: rgba(0, 0, 0, 1);
+--couleur-fond-site: rgba(217, 217, 217, 1);
+--couleur-titre: rgba(149, 83, 76, 1);
+--titre--intro-site: rgba(28, 25, 25, 1);
+--couleur-éléments-site: rgba(48, 101, 98, 1);
+--couleur-articles: rgba(255, 255, 255, 1);
+
+/* Text-size styles */
+--titre-site: 22px;
+--sous-titre-site: 20px;
+--texte-site: 14px;
+--sous-titre-site: 15px;
+
+  /* Polices de caractère */
+  --font-sans-serif: 'Bowlby One', sans-serif;
+  --font-serif: 'Noto Serif Khojki', 'serif';
+
+}
+
