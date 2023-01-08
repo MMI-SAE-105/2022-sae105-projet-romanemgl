@@ -24,6 +24,10 @@ body {
     position: relative;
 }
 
+a:visited {
+    color: black
+}
+
 .h2-article {
     font-family: 'Noto Serif Khojki';
     text-align: center;

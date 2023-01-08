@@ -42,3 +42,22 @@ header {
 .header__langue{
 margin-top: 20px;
 }
+
+
+.header__menu-btn {
+    position: relative;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    left: 100;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    appearance: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
