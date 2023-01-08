@@ -1,5 +1,7 @@
 @import url('components/menu.css');
 
+@import url('utils/variable.css');
+
 @import url('components/footer.css');
 
 @import url('components/header.css');
@@ -31,3 +33,5 @@
 @import url('layout/formulairedecontact.css');
 
 @import url('layout/lesautresprojets.css');
+
+@import url('components/carrousel.css');

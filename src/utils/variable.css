@@ -9,9 +9,10 @@
 
 /* Text-size styles */
 --titre-site: 22px;
---sous-titre-site: 20px;
+--heading2: 20px;
 --texte-site: 14px;
---sous-titre-site: 15px;
+--petit-texte: 12px;
+--heading3: 15px;
 
   /* Polices de caractère */
   --font-sans-serif: 'Bowlby One', sans-serif;

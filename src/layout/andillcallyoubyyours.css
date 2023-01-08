@@ -16,39 +16,6 @@
     display: flex;
 }
 
-.film1 {
-    display: flex;
-    width: 154px;
-    height: 236px;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-.film2 {
-    display: flex;
-    width: 154px;
-    height: 236px;
-    margin-left: 200px;
-    margin-top: -75px;
-}
-
-.film3 {
-    display: flex;
-    width: 154px;
-    height: 236px;
-    margin-left: 40px;
-    margin-top: -75px;
-}
-
-.film4 {
-    display: flex;
-    width: 154px;
-    height: 236px;
-    margin-left: 200px;
-    margin-top: -75px;
-}
-
-
 .film-affiche {
     border: none;
     display: flex;
