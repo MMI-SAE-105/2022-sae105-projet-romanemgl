@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
   <meta charset="UTF-8">
@@ -14,26 +14,23 @@
 </head>
 <!--début header-->
 <body>
-  <header class="header">
-    <div class="header__start">
+<header class="header">
+  <div class="header__start">
       <a href="/index.html">
-        <header class="image__logo"> <img src="/assets/icones/wiwtb18.svg" alt="logo du site">
+           <img class="header__image-logo" src="/assets/icones/wiwtb18.svg" alt="logo du site">
       </a>
-    </div>
+  </div>
 
-    <div class="header__end">
-      <button class="header__menu-btn menu-btn">
-        <img src="/assets/icones/globe1.svg" alt="icone langage">
-        <span></span>
-      </button>
+  <div class="header__end">
+         <a href="/en/en-index.html"><img class="header__langue" src="/assets/icones/globe1.svg" alt="icone langage"></a>
+  
 
-<!--début menu-->
+
       <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-        <img src="/assets/icones/Menu.svg" alt="menu">
-        <span></span>
+          class="header__menuBtn">
+          <img src="/assets/icones/Menu.svg" alt="menu">
       </button>
-    </div>
+  </div>
 
     <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
 

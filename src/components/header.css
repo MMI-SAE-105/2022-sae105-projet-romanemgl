@@ -2,6 +2,9 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #95534C;
+    width: 100%;
+    height: 81px;
+
 }
 
 .header__end {
@@ -9,6 +12,8 @@ header {
     margin-right: 15px;
     margin-top: 10px;
     z-index: 6;
+    display: flex;
+    gap: 10px;
 }
 
 .header__start {
@@ -30,6 +35,10 @@ header {
     margin-top: 0.5cm;
 }
 
-.image__logo {
-    font-size: 40px
+.header__image-logo {
+    width: 64px;
+}
+
+.header__langue{
+margin-top: 20px;
 }
