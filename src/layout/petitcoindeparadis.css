@@ -1,6 +1,6 @@
 .frise {
-    box-sizing: border-box;
-    position: relative;
+  box-sizing: border-box;
+  position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -22,9 +22,9 @@
 
 .frise article {
     position: relative;
-    background: #eeeeee;
-    width: calc( 50% - 40px );
+    width: calc( 20% - 11px);
     padding: 15px;
+    padding-right: 35px;
 }
 
 .frise article + article {
@@ -36,7 +36,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: calc( 100% + 26px );
+    left: calc( 100% + 25px);
     background: #d6d6d6;
     width: 24px;
     height: 24px;
@@ -53,7 +53,6 @@
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
-    border-left: 16px solid #eeeeee;
     border-bottom: 20px solid transparent;
   }
 
@@ -71,11 +70,12 @@
     left: auto;
     right: 100%;
     border-left: none;
-    border-right: 16px solid #eeeeee;
   }
 
 .frise__texte {
     text-align: center;
+    margin: auto;
+
 }
 
 .article-paradis-vespa {
@@ -87,5 +87,6 @@
     margin: auto;
     text-align: center;
 }
+
 
 
